@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+pre { font-size: 52px; margin:0;}
+button { font-size: 26px;}
+    </style>
+</head>
+<body>
+<pre id="out">00:00</pre>
+<button id="b">Start</button>
+<script>
+var current = 0;
+var timer;
+var button = document.getElementById('b');
+var out = document.getElementById('out');
+function f2(x) { x = x|0; if (x<10) return '0'+x; else return x; }
+function bClick() {
+    if (timer) stop();
+    else start();
+}
+function start() {
+    current = 0;
+    button.innerText = "Stop";
+    out.innerText = "00:00";
+
+    timer = setInterval(function() {
+       current ++;
+       out.innerText = f2(current/60)+':'+f2(current %60);
+   },1000);
+}
+function stop() {
+    clearInterval(timer);
+    button.innerText = "Start";
+    timer = null;
+}
+
+button.addEventListener('click', bClick);
+
+</script>
+</body>
+</html>

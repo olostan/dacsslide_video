@@ -1,0 +1,16 @@
+#photo: down(250) left(220);
+#name: right(400) up(50);
+
+.s3 {
+    #title: rotateX(90) up(250) hide;
+    #photo: up(250) show;
+    #name: left(350) show delay(0.4);
+    #url: show left(350) delay(0.6);
+}
+
+.s4 {
+    #photo: left(550) hide;
+    #name: left(650) hide;
+    #url: left(750) hide delay(0.4);
+    #last: up(400) show delay(0.5);
+}

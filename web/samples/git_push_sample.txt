@@ -1,0 +1,8 @@
+$ git push origin gh-pages
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 712 bytes | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To git@github.com:olostan/slides_twinui2.git
+   56fa30b..7483092  gh-pages -> gh-pages
