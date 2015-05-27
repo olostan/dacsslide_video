@@ -85,6 +85,47 @@
     <symbol id="e_3">Share one</symbol>
     <symbol id="e_4">Contribute</symbol>
     <symbol id="thnx">Thank you!</symbol>
+
+    <comment slide="3">Hello, my name is Valentyn Shybanov. </comment>
+    <comment slide="4">Last 7 years I am doing lots of public talks about Web and Cloud technologies and I have noticed that people get much more interested 				about what you’re talking if you accompany your talk with nice presentation slides. </comment>
+    <comment slide="5">First, of course, I’ve tried tools that help to create non-standard presentations like Prezi.</comment>
+    <comment slide="6">I liked them, but I felt myself limited: there is always a trade off between ease of use and available features: more easy to use, more constrains you have.</comment>
+    <comment slide="7">As I am developer, I felt that I can do better. And I like to code! Moreover, there is a saying that any developer should build a framework, and any web developer should build also a framework for building a presentations</comment>
+    <comment slide="8">Mostly at that time, Google Chrome starts supporting big variety of CSS3 Features</comment>
+    <comment slide="9">So I though: what if I can combine main feature of CSS - Cascading, CSS3 Transitions and CSS3 Transforms?</comment>
+    <comment slide="10">Cascading in CSS allows to override node’s visual style when you add classes into class list of the node.</comment>
+    <comment slide="11">So if your node has class “Slide1” that defines that it should have blue colour</comment>
+    <comment slide="12">Adding class “Slide2” that defines node’s colour to green will change node's color from blue to green</comment>
+    <comment slide="13">And removing "slide2" cass will make node become blue back</comment>
+    <comment slide="14">CSS3 Transforms allows to move things, rotate, scale, </comment>
+    <comment slide="15">and even matrix3d ( http://codepen.io/fta/pen/ifnqH )</comment>
+    <comment slide="16">And CSS3 Transitions undertakes work with animation! </comment>
+    <comment slide="17">You can specify different easing functions </comment>
+    <comment slide="18">The most interesting part is that there mostly no need any javascript: the only code required is adding and removing classes. </comment>
+    <comment slide="20">That was my first implementation I’ve published 4 years ago ( https://github.com/olostan/jacss/blob/71603b8a1242978158375161c84e7e387ed70d3d/jacss.js )  source code was about 70 lines of VanillaJS code.</comment>
+    <comment slide="21">About 1 year ago, Google released first version of Dart, so I decided to port this library to Dart.</comment>
+    <comment slide="22">And use AngularDart. Why? Because it is fun!</comment>
+    <comment slide="23">So let me introduce DaCSSlide</comment>
+    <comment slide="24">Actually to use DaCSSlide (Dart version of JaCSS - implementation of idea I’ve just described) you don’t need to know Dart. </comment>
+    <comment slide="25">All you need to know is basic knowledge of CSS and HTML.</comment>
+    <comment slide="26">You can use «starter project» to start playing with DaCSSlide - https://github.com/olostan/dacsslide_starter</comment>
+    <comment slide="27">Presentation is set of “symbols” that are just simple HTML elements, so you can:
+    embed there images, videos, anything what you can put into Web Page </comment>
+    <comment slide="28">Style it as you can style any web element
+    Also you can put any Web Component or AngularDart component</comment>
+    <comment slide="29">DaCSSlide provide small additions to SASS format to make defining position and transforms easily.
+    After added symbol you can define transitions that would be applied when you switch slides.<br>
+    After you set initial styling you can define show element should behave from slide to slide
+    With “show” and “hide” functions you can define lifecycle of the comment</comment>
+    <comment slide="30">When you’re done, you can very easily publish your presentation</comment>
+    <comment slide="31">Create an repository on GitHub</comment>
+    
+    <comment slide="33">Use peanut utility to build presentation into ‚gh-pages’ branch</comment>
+    <comment slide="34">It will compile your presentation so it could be viewed on normal browser (not Dartium)</comment>
+    <comment slide="35">And push it into github</comment>
+    <comment slide="38">Your presentation is now online and you can share it with others!</comment>
+    <comment slide="39">As in any open source project I encourage you to check examples, create own presentations and share it with others</comment>
+    <comment slide="40">Thank you for watching!</comment>
 </presentation>
 
 <script type="application/dart" src="main.dart"></script>
